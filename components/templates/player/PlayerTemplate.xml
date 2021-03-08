@@ -1,0 +1,11 @@
+<component name="PlayerTemplate" extends="BaseTemplate" >
+    <script type="text/brightscript" uri="pkg:/components/templates/player/PlayerTemplate.brs" />
+
+    <children>
+        <Video 
+            id="video"
+            width="1920"
+            height="1080"
+            translation="[0,0]" />
+    </children>
+</component>

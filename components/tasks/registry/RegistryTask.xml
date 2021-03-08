@@ -1,0 +1,16 @@
+<component name="RegistryTask" extends="Task" >
+    <interface>
+        <!--
+            {
+                type: "write|read|delete"
+                key: e.g. "pin"
+                value: e.g. "1234"
+            }
+         -->
+        <field id="request" type="assocArray" />
+        <field id="response" type="string" alwaysNotify="true" />
+    </interface>
+
+    <script type="text/brightscript" uri="pkg:/components/tasks/registry/RegistryTask.brs" />
+    <script type="text/brightscript" uri="pkg:/source/managers/RegistryManager.brs" />
+</component>

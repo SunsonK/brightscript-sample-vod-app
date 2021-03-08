@@ -1,0 +1,25 @@
+<component name="HomeTemplate" extends="BaseTemplate" >
+    <script type="text/brightscript" uri="pkg:/components/templates/home/HomeTemplate.brs" />
+
+    <children>
+        <Rectangle 
+            id="homeContainer"
+            width="1920"
+            height="1080"
+            color="#424242" >
+
+            <PinButton 
+                id="pinButton" 
+                translation="[99, 99]"  />
+
+            <MarkupGrid 
+                id="feedGrid"
+                translation="[390, 99]"
+                itemComponentName="FeedGridItem"
+                itemSize="[198, 318]"
+                numColumns="7"
+                numRows="12"
+                itemSpacing="[15, 15]" />
+        </Rectangle>
+    </children>
+</component>

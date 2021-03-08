@@ -1,0 +1,38 @@
+<component name="FeedGridItem" extends="Group" >
+    <interface>
+        <field id="itemContent" type="node" onChange="onContentChange" />
+    </interface>
+
+    <script type="text/brightscript" uri="pkg:/components/widgets/feed/FeedGridItem.brs" />
+
+    <children>
+        <Poster 
+            id="feedGridItemPoster"
+            width="135"
+            height="318" />
+
+        <PinButton id="feedGridItemAgeRating" translation="[282, 0]" />
+
+        <Label 
+            id="feedGridItemTitle"
+            color="#ECECEC"
+            width="318"
+            height="27"
+            translation="[0, 141]" >
+
+            <!-- <Font role="font" uri="pkg:/fonts/4Text-Regular.ttf" size="27" /> -->
+
+        </Label>
+
+        <Label 
+            id="feedGridItemSummary"
+            color="#ECECEC"
+            width="318"
+            height="21"
+            translation="[0, 174]" >
+
+            <!-- <Font role="font" uri="pkg:/fonts/4Text-Regular.ttf" size="21" /> -->
+
+        </Label>
+    </children>
+</component>

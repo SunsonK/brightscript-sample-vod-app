@@ -1,0 +1,11 @@
+<component name="FeedNode" extends="ContentNode">
+    <interface>
+        <field id="title" type="string" />
+        <field id="type" type="string" />
+        <field id="summary" type="string" />
+        <field id="imageUri" type="string" />
+        <field id="streamUri" type="string" />
+        <field id="expires" type="string" />
+        <field id="ageRating" type="integer" />
+    </interface>
+</component>

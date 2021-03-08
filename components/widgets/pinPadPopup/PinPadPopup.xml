@@ -1,0 +1,58 @@
+<component name="PinPadPopup" extends="Group" >
+    <interface>
+        <field id="type" type="string" />
+        <field id="close" type="assocArray" alwaysNotify="true" />
+    </interface>
+
+    <script type="text/brightscript" uri="pkg:/components/widgets/pinPadPopup/PinPadPopup.brs" />
+
+    <children>
+        <Rectangle
+            id="pinPadPopupContainer"
+            translation="[420, 180]"
+            width="1080"
+            height="720"
+            color="#000000"
+            opacity="0.9" >
+
+            <Label 
+                id="pinPadPopupTitle"
+                width="1080"
+                height="42"
+                color="#ECECEC"
+                translation="[16, 16]" >
+
+                <!-- <Font role="font" uri="pkg:/fonts/4Text-Regular.ttf" size="42" /> -->
+            </Label>
+
+            <Label 
+                id="pinPadPopupInstructions"
+                width="1080"
+                color="#ECECEC"
+                translation="[16, 102]"
+                wrap="true" >
+
+                <!-- <Font role="font" uri="pkg:/fonts/4Text-Regular.ttf" size="27" /> -->
+            </Label>
+
+            <PinButton id="pinButtonOne" translation="[16, 306]" />
+            <PinButton id="pinButtonTwo" translation="[80, 306]" />
+            <PinButton id="pinButtonThree" translation="[144, 306]"/>
+            <PinButton id="pinButtonFour" translation="[208, 306]" />
+
+            <PinButton id="confirmButton" translation="[294, 318]" />
+
+            <Label 
+                id="errorMessage"
+                visible="false"
+                translation="[16, 420]"
+                color="#B00020"
+                text="An error has occured please try again!"
+                width="1080" >
+
+                <!-- <Font role="font" uri="pkg:/fonts/4Text-Regular.ttf" size="27" /> -->
+            </Label>
+
+        </Rectangle>
+    </children>
+</component>

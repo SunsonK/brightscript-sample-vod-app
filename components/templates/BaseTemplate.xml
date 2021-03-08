@@ -1,0 +1,11 @@
+<component name="BaseTemplate" extends="Group" >
+    <interface>
+        <field id="pageArgs" type="assocArray" alwaysNotify="true" onChange="onPageArgs" />
+    </interface>
+
+    <script type="text/brightscript" uri="pkg:/components/templates/BaseTemplate.brs" />
+    <script type="text/brightscript" uri="pkg:/source/managers/StackManager.brs" />
+    <script type="text/brightscript" uri="pkg:/source/utils/typeUtils.brs" />
+    <script type="text/brightscript" uri="pkg:/source/utils/stringUtils.brs" />
+    <script type="text/brightscript" uri="pkg:/source/utils/imageUtils.brs" />
+</component>
